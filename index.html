@@ -1,11 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="pong.js" defer></script>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--<script src="pong.js" defer></script> -->
+  </head>
+  <body>
+    <script>
+      // let numbers = [1, 3, 5, 7];
+
+      // for (num in numbers) {
+      //   console.log(num);
+      // }
+
+      function breakWhenPrivate(array) {
+        for (animal of array) {
+          console.log(animal);
+          if (animal === "PRIVATE") {
+            console.log("Breaking out of the loop.");
+            break;
+          }
+        }
+      }
+
+      breakWhenPrivate(["cat", "dog", "PRIVATE", "parrot"]);
+    </script>
+  </body>
 </html>
