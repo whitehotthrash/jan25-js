@@ -96,3 +96,17 @@ function makeAPokemonTeam(){
 const someOtherPokemonTeam = () => {
 	return [new Pokemon("mewtwo"), new Pokemon("lugia")]
 }
+
+
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i > 1 && i < 11);
+
+let username;
+do {
+  username = prompt("What's your name?");
+} while (!username);
+
+alert(`Hi, ${username}!`);
