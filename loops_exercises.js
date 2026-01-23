@@ -41,13 +41,23 @@ console.log(hotel.gym)
 console.log(hotel.roomTypes[1])
 console.log(JSON.stringify(hotel.roomTypes))
 
-let motel = new Object();
+let motel = new Object(hotel); // hotel is an object reference
 
 motel.name = 'Park';
 motel.rooms = 120;
 motel.booked = 77;
-motel.checkAvailability = function() {
-  return this.rooms - this.booked;
-};
+motel.checkAvailability()
+motel.conciergeName = 'Bruce';
 
 console.log("Motel rooms available: ", motel.checkAvailability())
+console.log("Motel concierge name: ", motel.conciergeName);
+
+let inn = Object.create(motel); // true inheritance
+inn.name = 'Ocean View';
+inn.rooms = 15;
+inn.booked = 5;
+inn.checkAvailability();
+inn.conciergeName = "Rebecca";
+
+console.log("Inn available rooms: ", inn.checkAvailability());
+console.log("Inn concierge name: ", inn.conciergeName);
