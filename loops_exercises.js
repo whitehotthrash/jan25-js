@@ -44,6 +44,7 @@ console.log(JSON.stringify(hotel.roomTypes))
 
 //-----------------------------------------------------------
 let motel = new Object(hotel); // hotel is an object reference
+// this is the constructor method
 
 motel.name = 'Park';
 motel.rooms = 120;
