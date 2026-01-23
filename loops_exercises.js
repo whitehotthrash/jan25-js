@@ -40,3 +40,14 @@ console.log(hotel.checkAvailability());
 console.log(hotel.gym)
 console.log(hotel.roomTypes[1])
 console.log(JSON.stringify(hotel.roomTypes))
+
+let motel = new Object();
+
+motel.name = 'Park';
+motel.rooms = 120;
+motel.booked = 77;
+motel.checkAvailability = function() {
+  return this.rooms - this.booked;
+};
+
+console.log("Motel rooms available: ", motel.checkAvailability())
