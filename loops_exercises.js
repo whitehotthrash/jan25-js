@@ -25,6 +25,7 @@ var iffyArea = (function() {
   return width * height;
 }());
 
+
 const hotel = {
   name: 'Quay',
   rooms: 40,
@@ -41,6 +42,7 @@ console.log(hotel.gym)
 console.log(hotel.roomTypes[1])
 console.log(JSON.stringify(hotel.roomTypes))
 
+//-----------------------------------------------------------
 let motel = new Object(hotel); // hotel is an object reference
 
 motel.name = 'Park';
@@ -52,7 +54,9 @@ motel.conciergeName = 'Bruce';
 console.log("Motel rooms available: ", motel.checkAvailability())
 console.log("Motel concierge name: ", motel.conciergeName);
 
+//-----------------------------------------------------------
 let inn = Object.create(motel); // true inheritance
+
 inn.name = 'Ocean View';
 inn.rooms = 15;
 inn.booked = 5;
