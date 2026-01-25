@@ -1,3 +1,5 @@
+// don't worry, I vibecoded the shit out of this
+
 class PongGame {
   constructor() {
     this.canvas = document.createElement('canvas');
