@@ -66,3 +66,4 @@ inn.conciergeName = "Rebecca";
 
 console.log("Inn available rooms: ", inn.checkAvailability());
 console.log("Inn concierge name: ", inn.conciergeName);
+
